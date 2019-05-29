@@ -11,7 +11,7 @@ class App extends React.Component {
   constructor() {
     super();
     this.state = {
-      toDoArray: [{'toDoName': 'Make App'}],
+      toDoArray: [],
       toDoName: '',
       toDoId: Date.now(),
       toDoCompleted: false
@@ -22,9 +22,9 @@ class App extends React.Component {
     event.preventDefault();
 
     const newToDo = {
-      name: this.state.toDoName,
-      id: this.state.toDoId,
-      completed: this.state.toDoCompleted
+      toDoName: this.state.toDoName,
+      toDoId: this.state.toDoId,
+      toDoCompleted: this.state.toDoCompleted
     };
 
     this.setState({

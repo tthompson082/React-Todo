@@ -9,7 +9,7 @@ class ToDoList extends React.Component {
         return (
             <div>
                 {this.props.toDoArray.map(toDo =>(
-                    <Todo toDoProp={toDo} />
+                    <Todo toDoProp={toDo} key={toDo.toDoId}/>
                 ))}
             </div>
         );
