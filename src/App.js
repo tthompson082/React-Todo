@@ -16,6 +16,30 @@ class App extends React.Component {
       toDoCompleted: false
     }
   }
+
+  addToDo = event => {
+    event.preventDefault();
+
+    const newToDo = {
+      name: this.state.toDoName,
+      id: this.state.toDoId,
+      completed: this.state.toDoCompleted
+    };
+
+    this.setState({
+      toDoArray: [...this.state.toDoArray, newToDo],
+      toDoName: '',
+      toDoId: Date.now(),
+      toDoCompleted: false
+    });
+  };
+
+  handleChanges = event => {
+    this.setState({
+      [event.target.name]: event.target.value
+    });
+  };
+
   render() {
     return (
       <div>
