@@ -6,7 +6,7 @@ class TodoForm extends React.Component {
             <form onSubmit={this.props.addToDo}>
                 <input
                     placeholder="...todo"
-                    onChange={this.handleChanges}
+                    onChange={this.props.handleChanges}
                     value={this.props.toDoName}
                     name="toDoName"
                 />
