@@ -12,7 +12,6 @@ class TodoForm extends React.Component {
                 />
 
                 <button>Submit</button>
-                <button>Clear Completed</button>
             </form>
         )
     }
