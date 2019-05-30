@@ -59,7 +59,8 @@ class App extends React.Component {
   };
 
   clearCompleted = event => {
-    this.setState({toDoArray: this.state.toDoArray.filter(item => item.toDoCompleted === false)})
+    this.setState({
+      toDoArray: this.state.toDoArray.filter(item => item.toDoCompleted === false)})
   }
 
   handleChanges = event => {

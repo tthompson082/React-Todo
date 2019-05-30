@@ -48,6 +48,7 @@ h2 {
     background-color: #35605A;
     color: #D8E4FF;
     cursor: pointer;
+    outline: none;
 }
 
 .input-form button:hover {
@@ -74,7 +75,7 @@ h2 {
     margin-bottom: 1.5em;
     background-color: #D8E4FF;
     border-radius: 20px;
-    border: 2px solid #31E981;
+    border: 3px solid #31E981;
 }
 ::-webkit-scrollbar {
     display: none;
